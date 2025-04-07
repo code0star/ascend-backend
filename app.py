@@ -19,7 +19,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 app = Flask(__name__)
-CORS(app, origins="*", origins=["https://your-frontend.vercel.app"], supports_credentials=True) 
+CORS(app, origins="*", supports_credentials=True)
 
 # Files for storing URL and conversation history
 LAST_VIDEO_URL_FILE = 'last_video_url.txt'
